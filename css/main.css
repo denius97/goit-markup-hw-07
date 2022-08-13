@@ -39,6 +39,10 @@
   margin: -1px;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: var(--main-font);
   font-size: 14px;
