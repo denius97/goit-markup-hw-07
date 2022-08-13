@@ -1,0 +1,32 @@
+.primary-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-txt-col);
+  background-color: var(--accent-btn-bgc);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background-color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-focus);
+  }
+
+  &--icon {
+    gap: 8px;
+    padding: 10px 28px;
+  }
+}
