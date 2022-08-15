@@ -1,6 +1,10 @@
 .address {
   font-style: inherit;
 
+  &__item {
+    line-height: 1.5;
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }

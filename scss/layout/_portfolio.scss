@@ -1,9 +1,18 @@
-.portfolio-card {
-  display: block;
-  transition: box-shadow var(--main-transition);
+.portfolio {
+  &__filter {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-  &:hover,
-  &:focus {
+  &__card {
+    display: block;
+    transition: box-shadow var(--main-transition);
+  }
+
+  &__card:hover,
+  &__card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
@@ -30,8 +39,8 @@
     transition: transform var(--main-transition);
   }
 
-  &:hover &__text,
-  &:focus &__text {
+  &__card:hover &__text,
+  &__card:focus &__text {
     transform: translateY(0);
   }
 
